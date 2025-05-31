@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmlink</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/buyersignup.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Farmlink Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-buttons">
+        <button class="signup btn1">
+          <a href="signup_screen.html">Sign Up</a>
+        </button>
+        <button class="login btn2"><a href="login.html">Login</a></button>
+      </div>
+    </header>
+    <main>
+      <form id="buyerForm" class="form-container">
+        <h2>Create Buyers Account</h2>
+
+        <div class="input-group">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="eg. Olaide"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="eg. Williams"
+            required
+          />
+        </div>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="eg. williamsolaide@farmlink.com"
+          required
+        />
+        <input type="tel" name="phone" placeholder="eg. 09012332105" required />
+
+        <select name="location" required>
+          <option value="">Select state</option>
+          <option value="Lagos">Lagos</option>
+          <option value="Abuja">Abuja</option>
+          <option value="Kano">Kano</option>
+        </select>
+
+        <select name="preference" required>
+          <option value="">Interested in purchasing</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="grains">Grains</option>
+          <option value="fruits">Fruits</option>
+        </select>
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        />
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm password"
+          required
+        />
+
+        <button onclick="submitBuyerData()" type="submit">
+          Create Buyer Account
+        </button>
+        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div>
+          <h4>Contact Us</h4>
+          <p>Email: business@farmlink.com</p>
+          <p>Phone: 09043186112</p>
+        </div>
+        <div>
+          <h4>Navigation Links</h4>
+          <p><a href="Index.html">Home</a></p>
+          <p>How It Works</p>
+          <p>Our Services</p>
+          <p>Our Products</p>
+        </div>
+        <div>
+          <h4>About Us</h4>
+          <p>Our Mission</p>
+          <p>Contact us</p>
+          <p>FAQs</p>
+        </div>
+        <div>
+          <h4>Join Us</h4>
+          <p><a href="login.html">Login</a></p>
+          <p><a href="signup_screen.html">Sign Up</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Farmlink. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/buyersignup.js"></script>
+  </body>
+</html>

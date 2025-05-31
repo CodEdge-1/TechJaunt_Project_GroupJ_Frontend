@@ -1,0 +1,54 @@
+ 
+  
+  .page-title {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 1.8em;
+  }
+  
+  .signup-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h2 {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+  
+  .card p {
+    font-size: 0.95em;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #2d7c2d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .login-link a {
+    color: #2d7c2d;
+    text-decoration: none;
+  }

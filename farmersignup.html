@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmlink</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/farmersignup.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Farmlink Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-buttons">
+        <button class="signup btn1">
+          <a href="signup_screen.html">Sign Up</a>
+        </button>
+        <button class="login btn2">
+          <a href="login.html">Login</a>
+        </button>
+      </div>
+    </header>
+    <div class="form-container">
+      <h2 class="form-title">Create Farmer Account</h2>
+
+      <form id="farmerForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="e.g. Olumide" />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="e.g. Williams" />
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. olumide.williams@example.com"
+          />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="e.g. 090XXXXXXXX" />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="primaryProduce">Primary Produce</label>
+          <div class="select-wrapper">
+            <select id="primaryProduce">
+              <option value="">Select crops you produce</option>
+              <option value="grains">Grains</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="fruits">Fruits</option>
+              <option value="tubers">Tubers</option>
+              <option value="spices">Spices</option>
+              <option value="legumes">Legumes</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="farmLocation">Farm Location</label>
+          <div class="select-wrapper">
+            <select id="farmLocation">
+              <option value="">Select state</option>
+              <option value="lagos">Lagos State</option>
+              <option value="ogun">Ogun State</option>
+              <option value="oyo">Oyo State</option>
+              <option value="kano">Kano State</option>
+              <option value="kaduna">Kaduna State</option>
+              <option value="rivers">Rivers State</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width password-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <span class="toggle-password" data-target="password">
+            <i class="fas fa-eye-slash"></i>
+          </span>
+        </div>
+
+        <div class="form-group full-width password-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm password"
+          />
+          <span class="toggle-password" data-target="confirmPassword">
+            <i class="fas fa-eye-slash"></i>
+          </span>
+        </div>
+
+        <button
+          onclick="submitFarmerData()"
+          type="submit"
+          class="create-account-btn"
+        >
+          Create Farmer Account
+        </button>
+
+        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div>
+          <h4>Contact Us</h4>
+          <p>Email: business@farmlink.com</p>
+          <p>Phone: 09043186112</p>
+        </div>
+        <div>
+          <h4>Navigation Links</h4>
+          <p><a href="Index.html">Home</a></p>
+          <p>How It Works</p>
+          <p>Our Services</p>
+          <p>Our Products</p>
+        </div>
+        <div>
+          <h4>About Us</h4>
+          <p>Our Mission</p>
+          <p>Contact us</p>
+          <p>FAQs</p>
+        </div>
+        <div>
+          <h4>Join Us</h4>
+          <p><a href="login.html">Login</a></p>
+          <p><a href="signup_screen.html">Sign Up</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Farmlink. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/farmersignup.js"></script>
+  </body>
+</html>

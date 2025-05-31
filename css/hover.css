@@ -1,0 +1,33 @@
+.get-started:hover,
+.signup:hover{
+  background: green;
+  color: white;
+  box-shadow: 3px 2px gray;
+}
+ 
+.join-now:hover,
+.login:hover {
+  background: transparent;
+  border: 2px solid green;
+  color: green;
+  box-shadow: 3px 2px #72f775;
+}
+
+.newsletter form:last-child:hover,
+.browse:hover {
+    background: #fff;
+    border: 2px solid green;
+    color: #2d7c2d;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #2d7c2d;
+}
+
+.login-link a:hover {
+    color: black
+}
+
+
+  
